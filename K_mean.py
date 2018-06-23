@@ -97,7 +97,7 @@ def parse(x):
     return array
 
 digits=[]                                                               #we will store all image data as array (1D)
-with open("C:\\Users\\S.PARIA\\Documents\\python\AI\\basic_math\\k mean clustering\\digits.base64.json","r") as f: #open our MNIST handwritten dataset of images
+with open("digits.base64.json","r") as f:                               #open our MNIST handwritten dataset of images
     for s in f.readlines():                                             #for each image in the file
         digits.append(parse(s))                                         #add the image to list as a list of 28*28(784) size
 
